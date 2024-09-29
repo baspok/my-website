@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как работать с API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">Меню</button>
+        <nav>
+            <a class="button" href="index.html">Главная</a>
+            <a class="button" href="api.html">Что такое API?</a>
+            <a class="button" href="types.html">Виды API</a>
+            <a class="button" href="working.html">Как работать с API</a>
+            <a class="button" href="projects.html">Примеры API</a>
+            <a class="button" href="security.html">Безопасность API</a>
+            <a class="button" href="faq.html">Заключение</a>
+        </nav>
+    </header>
+    <div class="content">
+        <aside class="sidebar" id="sidebar">
+            <h4>Приблуда</h4>
+            <ul>
+                <li><a href="халявка.html">Сюда 1</a></li>
+                <li><a href="просто халява.html">Сюда 2</a></li>
+                <li><a href="сложно халява.html">Сюда 3</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1 class="site-title">Использование API сервисов при разработке сайтов</h1>
+            <h2>Как работать с API</h2>
+            <p>Работа с API включает в себя несколько шагов, начиная с получения ключа API и заканчивая интеграцией данных в ваше приложение. Вот основные этапы:</p>
+            <ol>
+                <li><strong>Получение ключа API:</strong> Многие API требуют регистрации и получения ключа для аутентификации запросов. Этот ключ обычно предоставляется после регистрации на сайте разработчика.</li>
+                <li><strong>Формирование запроса:</strong> Запрос к API состоит из URL, метода (GET, POST, PUT, DELETE) и параметров. Например, GET-запрос может выглядеть так: <code>https://api.example.com/data?key=your_api_key</code>.</li>
+                <li><strong>Обработка ответа:</strong> API возвращает данные в формате JSON, XML или другом. Вам нужно обработать эти данные и преобразовать их в удобный для вашего приложения формат.</li>
+                <li><strong>Интеграция данных:</strong> После обработки данных их можно интегрировать в ваше приложение. Например, вы можете отобразить данные на веб-странице или сохранить их в базе данных.</li>
+            </ol>
+            <img src="images.png" alt="Working with API" style="max-width: 100%;">
+            <p>Работа с API требует понимания основ веб-разработки, таких как HTTP-запросы, JSON и XML. Также важно учитывать ограничения API, такие как лимиты запросов и политика использования.</p>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Павлов Тимофей.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

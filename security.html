@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">Меню</button>
+        <nav>
+            <a class="button" href="index.html">Главная</a>
+            <a class="button" href="api.html">Что такое API?</a>
+            <a class="button" href="types.html">Виды API</a>
+            <a class="button" href="working.html">Как работать с API</a>
+            <a class="button" href="projects.html">Примеры API</a>
+            <a class="button" href="security.html">Безопасность API</a>
+            <a class="button" href="faq.html">Заключение</a>
+        </nav>
+    </header>
+    <div class="content">
+        <aside class="sidebar" id="sidebar">
+            <h4>Приблуда</h4>
+            <ul>
+                <li><a href="халявка.html">Сюда 1</a></li>
+                <li><a href="просто халява.html">Сюда 2</a></li>
+                <li><a href="сложно халява.html">Сюда 3</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1 class="site-title">Использование API сервисов при разработке сайтов</h1>
+            <h2>Безопасность API</h2>
+            <p>Безопасность API является критически важной. Вот несколько методов обеспечения безопасности API:</p>
+            <ul>
+                <li><strong>Использование OAuth:</strong> OAuth — это протокол авторизации, который позволяет пользователям предоставлять доступ к своим данным без передачи учетных данных. OAuth широко используется для аутентификации в API.</li>
+                <li><strong>Регулярное обновление API:</strong> Регулярное обновление API помогает устранять уязвимости и поддерживать безопасность. Важно следить за обновлениями и исправлениями безопасности.</li>
+                <li><strong>Мониторинг активности:</strong> Мониторинг активности API позволяет выявлять необычные запросы и потенциальные угрозы. Используйте инструменты для мониторинга и анализа трафика API.</li>
+                <li><strong>Шифрование данных:</strong> Используйте шифрование для защиты данных при передаче и хранении. HTTPS и TLS — это стандартные методы шифрования, используемые для защиты данных в API.</li>
+            </ul>
+            <img src="API-Security-best-practices.png" alt="API Security" style="max-width: 100%;">
+            <p>Безопасность API требует комплексного подхода, включающего в себя аутентификацию, авторизацию, шифрование и мониторинг. Важно следовать лучшим практикам безопасности и регулярно проводить аудит API.</p>
+
+            <h2>Таблица методов обеспечения безопасности API</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Метод</th>
+                        <th>Описание</th>
+                        <th>Примеры</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OAuth</td>
+                        <td>Протокол авторизации, позволяющий пользователям предоставлять доступ к своим данным без передачи учетных данных.</td>
+                        <td>Google OAuth, Facebook OAuth</td>
+                    </tr>
+                    <tr>
+                        <td>Регулярное обновление API</td>
+                        <td>Регулярное обновление API для устранения уязвимостей и поддержания безопасности.</td>
+                        <td>GitHub API, Twitter API</td>
+                    </tr>
+                    <tr>
+                        <td>Мониторинг активности</td>
+                        <td>Мониторинг активности API для выявления необычных запросов и потенциальных угроз.</td>
+                        <td>AWS CloudTrail, Google Cloud Monitoring</td>
+                    </tr>
+                    <tr>
+                        <td>Шифрование данных</td>
+                        <td>Использование шифрования для защиты данных при передаче и хранении.</td>
+                        <td>HTTPS, TLS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Павлов Тимофей.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

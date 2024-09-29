@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">Меню</button>
+        <nav>
+            <a class="button" href="index.html">Главная</a>
+            <a class="button" href="api.html">Что такое API?</a>
+            <a class="button" href="types.html">Виды API</a>
+            <a class="button" href="working.html">Как работать с API</a>
+            <a class="button" href="projects.html">Примеры API</a>
+            <a class="button" href="security.html">Безопасность API</a>
+            <a class="button" href="faq.html">Заключение</a>
+        </nav>
+    </header>
+    <div class="content">
+        <aside class="sidebar" id="sidebar">
+            <h4>Приблуда</h4>
+            <ul>
+                <li><a href="халявка.html">Сюда 1</a></li>
+                <li><a href="просто халява.html">Сюда 2</a></li>
+                <li><a href="сложно халява.html">Сюда 3</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1 class="site-title">Использование API сервисов при разработке сайтов</h1>
+            <h2>Виды API</h2>
+            <p>Существуют различные виды API, каждый из которых имеет свои особенности и применения. Вот некоторые из них:</p>
+            <ul>
+                <li><strong>REST API:</strong> Один из наиболее популярных типов API, использующий HTTP-запросы для получения и отправки данных. REST API прост в использовании и хорошо подходит для веб-сервисов.</li>
+                <li><strong>SOAP API:</strong> Использует XML для обмена данными и предоставляет более строгие правила для взаимодействия. SOAP API часто используется в корпоративных приложениях.</li>
+                <li><strong>GraphQL API:</strong> Позволяет клиентам запрашивать только те данные, которые им нужны. GraphQL API гибкий и эффективный, но требует более сложной настройки.</li>
+                <li><strong>WebSocket API:</strong> Обеспечивает двустороннюю связь между клиентом и сервером в реальном времени. WebSocket API хорошо подходит для приложений, требующих постоянного обмена данными.</li>
+            </ul>
+            <img src="api-types.png" alt="Types of API" style="max-width: 100%;">
+            <p>Выбор типа API зависит от конкретных требований проекта, таких как масштабируемость, производительность и сложность интеграции.</p>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Павлов Тимофей.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

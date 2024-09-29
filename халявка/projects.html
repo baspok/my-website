@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="toggle-btn" onclick="toggleSidebar()">Меню</button>
+        <nav>
+            <a class="button" href="index.html">Главная</a>
+            <a class="button" href="api.html">Что такое API?</a>
+            <a class="button" href="types.html">Виды API</a>
+            <a class="button" href="working.html">Как работать с API</a>
+            <a class="button" href="projects.html">Примеры API</a>
+            <a class="button" href="security.html">Безопасность API</a>
+            <a class="button" href="faq.html">Заключение</a>
+        </nav>
+    </header>
+    <div class="content">
+        <aside class="sidebar" id="sidebar">
+            <h4>Приблуда</h4>
+            <ul>
+                <li><a href="халявка.html">Сюда 1</a></li>
+                <li><a href="просто халява.html">Сюда 2</a></li>
+                <li><a href="сложно халява.html">Сюда 3</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h1 class="site-title">Использование API сервисов при разработке сайтов</h1>
+            <h2>Примеры API</h2>
+            <p>Вот несколько примеров популярных API, которые широко используются в веб-разработке:</p>
+            <ul>
+                <li><strong>Google Maps API:</strong> Позволяет интегрировать карты Google в ваше приложение. Вы можете отображать карты, маркеры, маршруты и многое другое.</li>
+                <li><strong>Twitter API:</strong> Предоставляет доступ к данным Twitter, таким как твиты, пользователи и тенденции. Вы можете создавать приложения, которые взаимодействуют с Twitter.</li>
+                <li><strong>Facebook Graph API:</strong> Позволяет получать данные из Facebook, такие как профили пользователей, посты и группы. Этот API широко используется для интеграции с социальными сетями.</li>
+                <li><strong>GitHub API:</strong> Предоставляет доступ к данным GitHub, таким как репозитории, пользователи и коммиты. Вы можете создавать инструменты для управления проектами на GitHub.</li>
+            </ul>
+            <img src="API-Projects.jpg" alt="API Projects" style="max-width: 100%;">
+            <p>Эти API позволяют разработчикам расширять функциональность своих приложений, интегрируя их с популярными сервисами и платформами.</p>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Павлов Тимофей.</p>
+    </footer>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

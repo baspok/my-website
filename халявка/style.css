@@ -1,0 +1,141 @@
+body {
+    color: #606c76;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.6em;
+    font-weight: 300;
+    letter-spacing: .01em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main {
+    width: 100%;
+    max-width: 1000px; /* Максимальная ширина элемента */
+    padding: 10px; /* Поля вокруг текста */
+    margin: 0 auto; /* Выравниваем по центру */ 
+    
+}
+header {
+    background: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.container {
+  margin: 0 auto;
+  max-width: 112.0rem;
+  padding: 0 2.0rem;
+  position: relative;
+  width: 100%;
+}
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    background: #f9f9f9;
+    position: fixed;
+    left: -220px; /* Скрываем сайдбар за пределами экрана */
+    transition: left 0.3s ease; /* Плавный переход */
+    height: 100%;
+    overflow-y: auto;
+}
+.sidebar.open {
+    left: 0; /* Показываем сайдбар */
+}
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px;
+    background: #9b4dca;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.sidebar a {
+    color: #9b4dca;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    color: #9b4dca;
+}
+footer {
+    background: #9b4dca;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px ;
+}
+.xmain {
+    text-align: center
+}
+.site-title {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9b4dca;
+}
+h4 {
+    color: #9b4dca;
+}
+.content {
+    display: flex;
+    flex: 1 0 auto;
+}
+@media (max-width: 320px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+    .main {
+        width: 100%;
+    }
+    nav {
+        flex-direction: column; /* Меняем направление flexbox на колонку */
+        align-items: center; /* Выравниваем элементы по центру */
+    }
+    nav a {
+        margin: 5px 0; /* Добавляем отступы между кнопками */
+    }
+}

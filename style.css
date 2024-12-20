@@ -107,22 +107,20 @@ th {
     background-color: #f2f2f2;
 }
 
+/* Стили для контейнера видео */
 .video-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 2%; /* Добавляем отступ снизу */
-    width: 20%; /* Убедитесь, что контейнер занимает всю ширину */
+    align-items: center;
+    margin: 2% auto; /* Выравниваем по центру */
+    max-width: 600px; /* Максимальная ширина видео */
+    width: 100%; /* Заполняем доступное пространство */
 }
 
-/* Стили для видеоплеера, выровненного по центру и среднего размера */
-.centered-video {
-    max-width: 600px; /* Фиксированная ширина видеоплеера */
-    width: 40%; /* Заполняем доступное пространство */
+.video-container iframe {
+    width: 100%; /* Ширина видео */
     height: auto; /* Автоматически подстраиваем высоту */
-    display: block;
-    margin: 0 auto; /* Выравниваем видео по центру */
+    aspect-ratio: 16 / 9; /* Соотношение сторон 16:9 */
 }
 
 .xmain {
@@ -178,7 +176,7 @@ h4 {
         margin: 2% 0; /* Добавляем отступы между кнопками */
     }
 
-    .centered-video {
-        max-width: 90%; /* Уменьшаем ширину видеоплеера на мобильных устройствах */
+    .video-container {
+        max-width: 90%; /* Уменьшаем ширину видео на мобильных устройствах */
     }
 }
